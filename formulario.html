@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento</title>
 </head>
+
 <body>
-    <form name=" datos">
-        <input type="number" class="label" placeholder="Ingrese un numero(0-9)"> Number<br>
-        <input type="email"class="label" placeholder="Ingrese el correo"> E-mail<br>
-<input type="text" class="label" placeholder="ejemplo:Juan"> nombre<br>
-<input type="text" class ="label" placeholder ="ejemplo: Tandazo"> apellido <br>
-<input type="date" class=" label" placeholder="07-09-2007">fecha<br>
-<input type="url" class="label" placeholder="link: https://practica.com">pagina web<br>
-    <label style="color:rgb(255, 127, 244);align-items: center; "> Que estandares conoces?
-    </label><br>
-    <input type="checkbox" value="HTML5"> HTML5<br>
-    <input type="checkbox" value="CSS3"> CSS3<br>
-    <input type="checkbox" values ="JavaScrip"> JavaScrip <br>
-    <textarea cols="15" rows="8" class="label" placeholder="ingrese su informacion">  </textarea ><br>
-<input type="button" value="Enviar la informacion">   
-</form>
-<ul>
-    <li>Juljhancer Javier Cañarte Lozano</li>
-    <li>HUGO ENRIQUE MENDOZA COELLO</li>
-    <li> Edgar Samuel Tandazo Briones</li>
-</ul>
+    <main>
+        <h1>Registro de Datos</h1>
+        <form name="datos">
+            <div><label for="numero">Number</label><br><input type="number" id="numero" placeholder="Ingrese un numero(0-9)"></div>
+            <br>
+            <div><label for="correo">E-mail</label><br><input type="email" id="correo" placeholder="Ingrese el correo"></div>
+            <br>
+            <div><label for="nombre">nombre</label><br><input type="text" id="nombre" placeholder="ejemplo: Juan"></div>
+            <br>
+            <div><label for="apellido">apellido</label><br><input type="text" id="apellido" placeholder="ejemplo: Tandazo"></div>
+            <br>
+            <div><label for="fecha">fecha</label><br><input type="date" id="fecha"></div>
+            <br>
+            <div><label for="web">pagina web</label><br><input type="url" id="web" placeholder="link: https://practica.com"></div>
+            <br>
+
+            <fieldset style="border: none; padding: 0; margin: 0;">
+                <legend style="color:rgb(180, 0, 140); font-weight: bold;">¿Qué estándares conoces?</legend>
+
+                <input type="checkbox" id="html5" value="HTML5">
+                <label for="html5">HTML5</label><br>
+
+                <input type="checkbox" id="css3" value="CSS3">
+                <label for="css3">CSS3</label><br>
+
+                <input type="checkbox" id="js" value="JavaScript">
+                <label for="js">JavaScript</label><br>
+            </fieldset>
+            <br>
+            <div><label for="info">Información adicional</label><br><textarea id="info" cols="15" rows="8" placeholder="ingrese su informacion"></textarea></div>
+            <br>
+
+            <input type="button" value="Enviar la informacion">
+        </form>
+        <p><a href="nombres.html">Continuar: ingresar nombres y apellidos</a></p>
+        <ul>
+            <li>Jeremy Shamir Intriago Loor</li>
+            <li>Alan Ricardo Sanchez Cantos</li>
+        </ul>
+    </main>
 </body>
+
 </html>
